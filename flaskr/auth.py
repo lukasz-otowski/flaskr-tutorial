@@ -83,6 +83,7 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
+
 # decorator to check if user is logged in
 def login_required(view):
     @functools.wraps(view)
